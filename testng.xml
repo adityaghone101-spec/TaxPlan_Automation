@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Taxplan Advisor QA Assessment Suite" parallel="false">
+
+    <listeners>
+        <listener class-name="com.taxplan.utils.TestListener"/>
+    </listeners>
+
+    <parameter name="browser" value="chrome"/>
+
+    <test name="Login Module Tests">
+        <classes>
+            <class name="com.taxplan.tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Home Page Module Tests">
+        <classes>
+            <class name="com.taxplan.tests.HomePageTest"/>
+        </classes>
+    </test>
+
+    <test name="Client and Consultant Dashboard Exploration Tests">
+        <classes>
+            <class name="com.taxplan.tests.ClientDashboardExplorationTest"/>
+        </classes>
+    </test>
+
+</suite>

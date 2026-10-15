@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="4" failed="8" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-15T23:30:09 IST" name="Default suite" finished-at="2026-10-15T23:36:42 IST" duration-ms="393920">
+    <groups>
+    </groups>
+    <test started-at="2026-10-15T23:30:09 IST" name="Default test" finished-at="2026-10-15T23:36:42 IST" duration-ms="393920">
+      <class name="com.taxplan.tests.ClientDashboardExplorationTest">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:30:08 IST" name="setUpSuite" finished-at="2026-10-15T23:30:09 IST" duration-ms="405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:30:09 IST" name="setUp" finished-at="2026-10-15T23:30:12 IST" duration-ms="3743" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.taxplan.tests.ClientDashboardExplorationTest.TC_C01_clientLoginAndDashboard()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_C01_clientLoginAndDashboard()[pri:1, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:30:12 IST" name="TC_C01_clientLoginAndDashboard" description="CLIENT: Login and verify dashboard loads" finished-at="2026-10-15T23:30:33 IST" duration-ms="20738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_C01_clientLoginAndDashboard -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:30:33 IST" name="tearDown" finished-at="2026-10-15T23:30:34 IST" duration-ms="750" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_C01_clientLoginAndDashboard status=SUCCESS method=ClientDashboardExplorationTest.TC_C01_clientLoginAndDashboard()[pri:1, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:30:34 IST" name="setUp" finished-at="2026-10-15T23:30:36 IST" duration-ms="1630" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.taxplan.tests.ClientDashboardExplorationTest.TC_C02_clientDashboardUIElements()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_C02_clientDashboardUIElements()[pri:2, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:30:36 IST" name="TC_C02_clientDashboardUIElements" description="CLIENT: Verify dashboard UI elements — nav, greeting, profile" finished-at="2026-10-15T23:31:11 IST" duration-ms="35703" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[BUG: Navigation bar not found on dashboard expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: BUG: Navigation bar not found on dashboard expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.taxplan.tests.ClientDashboardExplorationTest.TC_C02_clientDashboardUIElements(ClientDashboardExplorationTest.java:127)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_C02_clientDashboardUIElements -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:31:11 IST" name="tearDown" finished-at="2026-10-15T23:31:12 IST" duration-ms="1055" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_C02_clientDashboardUIElements status=FAILURE method=ClientDashboardExplorationTest.TC_C02_clientDashboardUIElements()[pri:2, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:31:12 IST" name="setUp" finished-at="2026-10-15T23:31:14 IST" duration-ms="1670" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.taxplan.tests.ClientDashboardExplorationTest.TC_C03_clientProfilePage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_C03_clientProfilePage()[pri:3, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:31:14 IST" name="TC_C03_clientProfilePage" description="CLIENT: Navigate to profile/account settings page" finished-at="2026-10-15T23:31:49 IST" duration-ms="35442" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[BUG: No Profile/Account/Settings link accessible from client dashboard expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: BUG: No Profile/Account/Settings link accessible from client dashboard expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.taxplan.tests.ClientDashboardExplorationTest.TC_C03_clientProfilePage(ClientDashboardExplorationTest.java:163)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_C03_clientProfilePage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:31:49 IST" name="tearDown" finished-at="2026-10-15T23:31:51 IST" duration-ms="1415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_C03_clientProfilePage status=FAILURE method=ClientDashboardExplorationTest.TC_C03_clientProfilePage()[pri:3, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:31:51 IST" name="setUp" finished-at="2026-10-15T23:31:53 IST" duration-ms="1788" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.taxplan.tests.ClientDashboardExplorationTest.TC_C04_clientMyServices()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_C04_clientMyServices()[pri:4, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:31:53 IST" name="TC_C04_clientMyServices" description="CLIENT: Explore My Services / My Orders section" finished-at="2026-10-15T23:32:28 IST" duration-ms="35611" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[BUG: My Services/My Orders section not found in client dashboard expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: BUG: My Services/My Orders section not found in client dashboard expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.taxplan.tests.ClientDashboardExplorationTest.TC_C04_clientMyServices(ClientDashboardExplorationTest.java:192)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_C04_clientMyServices -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:32:28 IST" name="tearDown" finished-at="2026-10-15T23:32:29 IST" duration-ms="1026" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_C04_clientMyServices status=FAILURE method=ClientDashboardExplorationTest.TC_C04_clientMyServices()[pri:4, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:32:29 IST" name="setUp" finished-at="2026-10-15T23:32:31 IST" duration-ms="1564" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.taxplan.tests.ClientDashboardExplorationTest.TC_C05_clientBookITRService()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_C05_clientBookITRService()[pri:5, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:32:31 IST" name="TC_C05_clientBookITRService" description="CLIENT: Test service booking flow — ITR Filing" finished-at="2026-10-15T23:33:03 IST" duration-ms="32557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_C05_clientBookITRService -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:33:03 IST" name="tearDown" finished-at="2026-10-15T23:33:04 IST" duration-ms="812" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_C05_clientBookITRService status=SUCCESS method=ClientDashboardExplorationTest.TC_C05_clientBookITRService()[pri:5, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:33:04 IST" name="setUp" finished-at="2026-10-15T23:33:06 IST" duration-ms="1568" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.taxplan.tests.ClientDashboardExplorationTest.TC_C06_clientConsultationBooking()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_C06_clientConsultationBooking()[pri:6, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:33:06 IST" name="TC_C06_clientConsultationBooking" description="CLIENT: Test Consultation booking page flow" finished-at="2026-10-15T23:33:41 IST" duration-ms="35201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_C06_clientConsultationBooking -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:33:41 IST" name="tearDown" finished-at="2026-10-15T23:33:42 IST" duration-ms="705" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_C06_clientConsultationBooking status=SUCCESS method=ClientDashboardExplorationTest.TC_C06_clientConsultationBooking()[pri:6, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:33:42 IST" name="setUp" finished-at="2026-10-15T23:33:43 IST" duration-ms="1703" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.taxplan.tests.ClientDashboardExplorationTest.TC_C07_clientLogout()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_C07_clientLogout()[pri:7, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:33:43 IST" name="TC_C07_clientLogout" description="CLIENT: Test logout functionality" finished-at="2026-10-15T23:34:19 IST" duration-ms="35337" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[BUG: Could not find or click Logout button on client dashboard expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: BUG: Could not find or click Logout button on client dashboard expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.taxplan.tests.ClientDashboardExplorationTest.TC_C07_clientLogout(ClientDashboardExplorationTest.java:277)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_C07_clientLogout -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:34:19 IST" name="tearDown" finished-at="2026-10-15T23:34:20 IST" duration-ms="854" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_C07_clientLogout status=FAILURE method=ClientDashboardExplorationTest.TC_C07_clientLogout()[pri:7, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:34:20 IST" name="setUp" finished-at="2026-10-15T23:34:21 IST" duration-ms="1540" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.taxplan.tests.ClientDashboardExplorationTest.TC_D01_consultantLoginAndDashboard()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_D01_consultantLoginAndDashboard()[pri:8, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:34:21 IST" name="TC_D01_consultantLoginAndDashboard" description="CONSULTANT: Login via consultant section and verify dashboard" finished-at="2026-10-15T23:34:35 IST" duration-ms="13603" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[BUG: Consultant login failed. Still on: https://staging.taxplanadvisor.in/login expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: BUG: Consultant login failed. Still on: https://staging.taxplanadvisor.in/login expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.taxplan.tests.ClientDashboardExplorationTest.TC_D01_consultantLoginAndDashboard(ClientDashboardExplorationTest.java:294)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_D01_consultantLoginAndDashboard -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:34:35 IST" name="tearDown" finished-at="2026-10-15T23:34:37 IST" duration-ms="1933" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_D01_consultantLoginAndDashboard status=FAILURE method=ClientDashboardExplorationTest.TC_D01_consultantLoginAndDashboard()[pri:8, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:34:37 IST" name="setUp" finished-at="2026-10-15T23:34:38 IST" duration-ms="1567" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.taxplan.tests.ClientDashboardExplorationTest.TC_D02_consultantDashboardUI()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_D02_consultantDashboardUI()[pri:9, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:34:38 IST" name="TC_D02_consultantDashboardUI" description="CONSULTANT: Verify consultant dashboard UI and available sections" finished-at="2026-10-15T23:35:04 IST" duration-ms="25327" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[BUG: No logout option found on consultant dashboard expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: BUG: No logout option found on consultant dashboard expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.taxplan.tests.ClientDashboardExplorationTest.TC_D02_consultantDashboardUI(ClientDashboardExplorationTest.java:322)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_D02_consultantDashboardUI -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:35:04 IST" name="tearDown" finished-at="2026-10-15T23:35:05 IST" duration-ms="1045" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_D02_consultantDashboardUI status=FAILURE method=ClientDashboardExplorationTest.TC_D02_consultantDashboardUI()[pri:9, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:35:05 IST" name="setUp" finished-at="2026-10-15T23:35:06 IST" duration-ms="1624" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.taxplan.tests.ClientDashboardExplorationTest.TC_D03_consultantProfile()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_D03_consultantProfile()[pri:10, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:35:06 IST" name="TC_D03_consultantProfile" description="CONSULTANT: Explore consultant profile/settings" finished-at="2026-10-15T23:35:42 IST" duration-ms="35707" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[BUG: Consultant Profile/Settings page not accessible from dashboard expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: BUG: Consultant Profile/Settings page not accessible from dashboard expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.taxplan.tests.ClientDashboardExplorationTest.TC_D03_consultantProfile(ClientDashboardExplorationTest.java:355)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_D03_consultantProfile -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:35:42 IST" name="tearDown" finished-at="2026-10-15T23:35:43 IST" duration-ms="994" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_D03_consultantProfile status=FAILURE method=ClientDashboardExplorationTest.TC_D03_consultantProfile()[pri:10, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:35:43 IST" name="setUp" finished-at="2026-10-15T23:35:45 IST" duration-ms="1568" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.taxplan.tests.ClientDashboardExplorationTest.TC_D04_consultantOrders()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_D04_consultantOrders()[pri:11, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:35:45 IST" name="TC_D04_consultantOrders" description="CONSULTANT: Explore assigned orders / client requests section" finished-at="2026-10-15T23:36:20 IST" duration-ms="35507" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[BUG: Consultant dashboard has no Orders/Requests section expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: BUG: Consultant dashboard has no Orders/Requests section expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.taxplan.tests.ClientDashboardExplorationTest.TC_D04_consultantOrders(ClientDashboardExplorationTest.java:384)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_D04_consultantOrders -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:36:20 IST" name="tearDown" finished-at="2026-10-15T23:36:21 IST" duration-ms="851" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_D04_consultantOrders status=FAILURE method=ClientDashboardExplorationTest.TC_D04_consultantOrders()[pri:11, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:36:21 IST" name="setUp" finished-at="2026-10-15T23:36:22 IST" duration-ms="1418" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.taxplan.tests.ClientDashboardExplorationTest.TC_D05_consultantAccessControl()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_D05_consultantAccessControl()[pri:12, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:36:22 IST" name="TC_D05_consultantAccessControl" description="CONSULTANT: Verify consultant cannot access client-only pages" finished-at="2026-10-15T23:36:42 IST" duration-ms="19364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_D05_consultantAccessControl -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:36:42 IST" name="tearDown" finished-at="2026-10-15T23:36:42 IST" duration-ms="791" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_D05_consultantAccessControl status=SUCCESS method=ClientDashboardExplorationTest.TC_D05_consultantAccessControl()[pri:12, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:com.taxplan.tests.ClientDashboardExplorationTest@11981797]" started-at="2026-10-15T23:36:43 IST" name="tearDownSuite" finished-at="2026-10-15T23:36:44 IST" duration-ms="1116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- com.taxplan.tests.ClientDashboardExplorationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
